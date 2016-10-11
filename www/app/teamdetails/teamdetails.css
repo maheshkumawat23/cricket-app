@@ -1,0 +1,27 @@
+.divider *{
+    padding-left:4%;
+    padding-top:2%;
+    margin: 0;
+    border-color: white;
+	background-color: white;
+}
+
+.item.item-trans {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white; 
+}
+
+.item.item-trans * {
+    color: white;
+    font-size: 1em;
+}
+
+
+.item[isOdd='true'] {
+    
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(152,152,152,0.2);
+    color: white; 
+}
+

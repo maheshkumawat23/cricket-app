@@ -1,0 +1,39 @@
+<ion-view class="pane">
+  <ion-content>
+
+
+    <ion-list>
+      <ion-item class='item item-trns-schedule' ng-repeat="item in dash_details"  isOdd="{{$odd}}">
+
+          <div class="row">
+            <div class="col text-center">
+              <h2>{{item.matchNo}} | {{item.date}} </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-33 col-offset-10 text-left">
+              <h2>{{item.team1}}</h2>
+            </div>
+            <div class="col">
+              <img ng-src='assets/images/vs.png' class='vs'>
+              </img>
+            </div>
+            <div class="col col-33 text-left">
+              <h2> {{item.team2}}</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col text-center">
+              <h2>{{item.time}}</h2>
+            </div>
+          </div>
+        
+
+      </ion-item>
+     
+    </ion-list>
+  </ion-content>
+
+</ion-view>

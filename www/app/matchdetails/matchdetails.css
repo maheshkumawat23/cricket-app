@@ -1,0 +1,15 @@
+.header .col {
+    background-color:lightgrey;
+}
+
+.item.item-trns-match {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white; 
+    
+}
+
+.item.item-trns-match * {
+    color: white;
+}
+    

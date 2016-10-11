@@ -1,0 +1,82 @@
+<ion-view>
+    <ion-content>
+	<ion-refresher on-refresh="refresh()"></ion-refresher>
+	<ion-list>
+            <ion-item class='item item-trns'>
+                <div class="row" style="margin-top:-2%">
+                    <div class="col col-33 col-offset-10">
+                        <h2> {{ currentTeam.team1 }}</h2>
+                    </div>
+                    <div class="col">
+                        <img ng-src='assets/images/vs.png' class='vs'>
+                        </img>
+                    </div>
+                    <div class="col col-33">
+                        <h2> {{ currentTeam.team2 }} </h2>
+                    </div>
+                </div>
+                <hr></hr>
+                <div class="row" style="margin-top:-2%">
+                    <div class="col col-50 col-offset-10">
+                        <h1> {{team1.run}} / {{team1.wckt}} </h1>
+                        <p> {{team1.overs}} overs</p>
+                    </div>
+                    <div class="col col-50">
+                        <h1> {{team2.run}} / {{team2.wckt}} </h1>
+                        <p> {{team2.overs}} overs</p>
+
+                    </div>
+                </div>
+				<div class="row row-center">
+                    <div class="col text-center">
+                        <h2>{{status}}</h2>
+                    </div>
+                </div>
+                <div class="row row-center">
+                    <div class="col text-center">
+                        <button class="button icon-left ion-location button-clear" ng-click='location()'>ITPL Ground, Mahadevapura</button>
+                    <hr>
+					</div>
+					
+                </div>
+                 
+				 <div class="row row-center" style="margin-top:-3%">
+                    <div class="col text-center">
+                        <h2 style='font-size:1.5em; padding-bottom:-5%'>Partnership</h2>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:-2%">
+                    <div class="col col-33 text-center">
+                        <h3> {{currentplayer.playerA.name}} </h3>
+                        <hr>
+                        <h2> {{currentplayer.playerA.score}} </h2>
+
+                    </div>
+
+                    <div class="col text-center">
+                        <img ng-src='assets/images/partnership.png' class='partnership'>
+                        </img>
+                    </div>
+
+                    <div class="col col-33 text-center">
+                        <h3> {{currentplayer.playerB.name}} </h3>
+                        <hr>
+                        <h2> {{currentplayer.playerB.score}} </h2>
+
+                    </div>
+                </div>
+            </ion-item>
+<hr></hr>
+			<ion-item-divider class='item-divider item-trns'>
+                <h4 style='padding-left:4%;padding-bottom:0%;padding-top:0%'>Comments</h4>
+            </ion-item-divider>
+            <ion-item ng-repeat='message in lasttwo'>
+                <p>{{message.name}} : {{message.comment}}</p>
+            </ion-item>
+        </ion-list>
+        
+
+       
+    </ion-content>
+
+</ion-view>

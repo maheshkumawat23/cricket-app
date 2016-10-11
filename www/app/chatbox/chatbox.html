@@ -1,0 +1,36 @@
+<ion-view>
+	<ion-content class="content-stable">
+
+		<ion-list>
+			<ion-item-divider class='divider_chat'>
+				<h3 class='what'>What's on your mind?</h3>
+			</ion-item-divider>
+
+			<label class="item item-input">
+   				 <input type="text" placeholder="Name" ng-model='data.username'>
+  			</label>
+
+			<label class="item item-input">
+    			<textarea placeholder="Comments" ng-model='data.comment'></textarea>
+  			</label>
+
+			<button class="button button-block button-positive" ng-click='send()'>
+  				Submit
+			</button>
+		</ion-list>
+
+		<ion-scroll class='row-66'>
+
+			<div class="row" ng-repeat='message in messages'>
+				<div class="col">
+					<div class="item item-text-wrap">
+						{{message.name}} : {{message.comment}}
+					</div>
+				</div>
+			</div>
+
+		</ion-scroll>
+
+
+	</ion-content>
+</ion-view>

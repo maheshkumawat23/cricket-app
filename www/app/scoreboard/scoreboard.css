@@ -1,0 +1,32 @@
+.item.item-trns {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white; 
+}
+
+.item.item-trns * {
+    color: white;
+}
+
+.item-divider.item-trns *{
+    border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+}
+
+.partnership{
+	width: 50px;
+	height: 50px;
+}
+
+.vs{
+	width: 20px;
+	height: 20px;
+}
+
+hr {
+	display: block;
+	border: 0;
+	border-top: 0.5px solid #ccc;
+	padding: 0; 
+}

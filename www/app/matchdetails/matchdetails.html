@@ -1,0 +1,14 @@
+<ion-view>
+	<ion-content>
+		<div class="row header">
+			<div class="col text-center">Team A</div>
+			<div class="col text-center">Team B</div>
+		</div>
+		<ion-list>
+			<div class="row item item-trns-match" ng-repeat="i in getNumber(number) track by $index">
+				<div class='col text-center'>{{getteama($index)}}</div>
+				<div class='col text-center'>{{getteamb($index)}}</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

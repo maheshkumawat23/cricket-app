@@ -1,0 +1,55 @@
+<ion-view>
+
+	<ion-content class="content-stable">
+		<ion-list>
+
+			<ion-item-divider class='divider'>
+				<h3>Group A</h3>
+			</ion-item-divider>
+
+			<ion-item class='item item-trans item-icon-right' ng-repeat='team in groupA' isOdd="{{$odd}}" ng-click='team.open=!team.open;'>
+				<!--<a ui-sref='tabs.teamdetails.matchdetails({team: item.team1})'>-->
+
+				<p>{{team.name}}</p>
+				<i class="icon" ng-class='{ "ion-arrow-up-b": team.open ,"ion-arrow-down-b":!team.open}'></i>
+				<h1 class='details' ng-show='team.open'>{{team.list}}</h1>
+
+			</ion-item>
+
+
+			<ion-item-divider class='divider'>
+				<h3>Group B</h3>
+			</ion-item-divider>
+
+
+			<ion-item class='item item-trans item-icon-right' ng-repeat='team in groupB' isOdd="{{$odd}}" ng-click='team.open=!team.open;'>
+				<p>{{team.name}}</p>
+				<i class="icon" ng-class='{ "ion-arrow-up-b": team.open ,"ion-arrow-down-b":!team.open}'></i>
+				<h1 class='details' ng-show='team.open'>{{team.list}}</h1>
+
+			</ion-item>
+
+			<ion-item-divider class='divider'>
+				<h3>Group C</h3>
+			</ion-item-divider>
+
+			<ion-item class='item item-trans item-icon-right' ng-repeat='team in groupC' isOdd="{{$odd}}" ng-click='team.open=!team.open;'>
+				<p>{{team.name}}</p>
+				<i class="icon" ng-class='{ "ion-arrow-up-b": team.open ,"ion-arrow-down-b":!team.open}'></i>
+				<h1 class='details' ng-show='team.open'>{{team.list}}</h1>
+			</ion-item>
+
+			<ion-item-divider class='divider'>
+				<h3>Group D</h3>
+			</ion-item-divider>
+
+			<ion-item class='item item-trans item-icon-right' ng-repeat='team in groupD' isOdd="{{$odd}}" ng-click='team.open=!team.open;'>
+				<p>{{team.name}}</p>
+				<i class="icon" ng-class='{ "ion-arrow-up-b": team.open ,"ion-arrow-down-b":!team.open}'></i>
+				<h1 class='details' ng-show='team.open'>{{team.list}}</h1>
+			</ion-item>
+
+		</ion-list>
+	</ion-content>
+
+</ion-view>

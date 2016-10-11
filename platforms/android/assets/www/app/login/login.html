@@ -1,0 +1,43 @@
+<ion-nav-view>
+<ion-pane>
+      <ion-header-bar class="bar-positive">
+       <img src="img/logo.png" width="40px" height="40px"> <h1 class="title">Canteen FeedBack</h1>
+		
+      </ion-header-bar>
+      <ion-content class="has-header" style="margin-top:100px">
+
+   <div class="list list-inset">
+          <label class="item item-input">
+            <button class = "button button-icon icon-left ion-person"></button>  <input type="text" placeholder="TCS EMP ID" ng-model="data.username">
+          </label>
+          
+
+ <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Lightsaber
+    </div>
+    <select>
+      <option>Blue</option>
+      <option selected>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+
+</div>
+
+
+          
+      </div>
+	    <button class="button button-block button-calm" ng-click="login()">Submit</button>
+		<button class="button button-block button-positive ion-person-add icon-left" ng-click="openModal()">
+  Admin Login
+</button>
+      </ion-content>
+    </ion-pane>
+</ion-nav-view>	
+
+
+
+	
